@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Redes Neurais com Teachable Machine</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-image: url(fundo_2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;";>
+    
+    <div class="container" style="text-align: center;">
+        <header class="jumbotron" style="background-color:#3b0038; color: white;">
+            <h1>RECONHECIMENTO DE ITENS DE MAQUIAGEM</h1>
+            <p></p>
+        </header>
+
+        <header style="color:darkred; font-weight: bold;">
+            <p>Se você está com dúvida se aquele produto que está comprando está certo.</p>
+            <p> Basta clicar no botão de "RECONHECIMENTO" que eu te ajudo!!</p>
+        </header>
+
+           <br>
+
+         <div id="base">
+            A base é um produto cosmético utilizado para igualar o tom da pele, assim como para amenizar manchas e imperfeições do rosto.
+        </div>
+        <br>
+
+        <div id="paleta">
+            Uma paleta é conjunto de produtos, para realçar sua beleza, pode ser ela de sombra, contorno, iluminador ou até mesmo corretivo.
+        </div>
+        <br>
+
+        <div id="batom">
+            O batom é um cosmético usado para dar cor aos lábios. Com ou sem brilho, realça a boca e é disponível em várias cores e marcas.
+        </div>
+
+        <br>
+        <br>
+    
+        <button type="button" class="btn btn-danger" onclick="init()">Iniciar Reconhecimento</button>
+        <div id="webcam-container"></div>
+        <div id="label-container" class="display-4"></div>
+        <br>
+        <br>
+
+
+        <footer class="panel-footer" style="text-align:center; background-color:#3b0038; color:white;"> 
+            Todos direitos reservados - Departamento de Computação - IFSULDEMINAS - Campus Machado
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="tensor.js" ></script>
+</body>
+</html>
